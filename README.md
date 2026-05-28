@@ -1,0 +1,1 @@
+# bshop-gestao-qa
