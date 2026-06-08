@@ -257,14 +257,8 @@ if(t>100)w=100
 else w=t<0?0:t
 return B.cX(new C.b1B(this,u,u*(x/100),u*(w/100),v.ok))}}
 C.aIO.prototype={
-t(d){var x,w,v=this,u=null,t=B.en(u,u,u,u,u,u,u,u,u,G.E1,v.c+"\n"),s=B.en(u,u,u,u,u,u,u,u,u,A.vV,""+v.d+" Atendimentos"),r=A.i.a4(v.e,0)
-r=B.en(u,u,u,u,u,u,u,u,u,B.bA(u,u,A.I.U(0.8),u,u,u,u,u,u,u,u,12,u,u,u,u,u,!0,u,u,u,u,u,u,u,u),"  \xb7  "+r+"%\n")
-x=B.dP("dd/MM",u).ai(v.w)
-w=B.dP("dd/MM",u).ai(v.x)
-w=B.en(u,u,u,u,u,u,u,u,u,B.bA(u,u,A.I.U(0.5),u,u,u,u,u,u,u,u,10,u,u,u,u,u,!0,u,u,u,u,u,u,u,u),x+" \u2013 "+w+"\n")
-x=A.i.a4(v.r,0)
-x=B.en(B.a([t,D.a9B,s,r,D.a9B,w,B.en(u,u,u,u,u,u,u,u,u,B.bA(u,u,A.I.U(0.6),u,u,u,u,u,u,u,u,10,u,u,u,u,u,!0,u,u,u,u,u,u,u,u),""+v.f+" Atendimentos  \xb7  "+x+"%")],y.R),u,u,u,u,u,u,u,u,u,u)
-return B.jb(D.ayP,new B.an(v.y.U(0.9),u,u,A.jn,u,u,A.P),u,A.ew,u,A.aS,u,x,u,u,A.m8,u,u)}}
+t(d){var x=this,w=null,v=B.en(B.a([B.en(w,w,w,w,w,w,w,w,w,G.E2,x.c+"\n"),D.a9C,B.en(w,w,w,w,w,w,w,w,w,A.oW,""+x.d+" Atendimentos"),B.en(w,w,w,w,w,w,w,w,w,A.oW,"  \xb7  "+A.i.a4(x.e,0)+"%\n"),D.a9C,B.en(w,w,w,w,w,w,w,w,w,A.vW,"Per\xedodo anterior: "+B.dP("dd/MM",w).ai(x.w)+" \u2013 "+B.dP("dd/MM",w).ai(x.x)+"\n"),B.en(w,w,w,w,w,w,w,w,w,A.vW,""+x.f+" Atendimentos  \xb7  "+A.i.a4(x.r,0)+"%")],y.R),w,w,w,w,w,w,w,w,w,w)
+return B.jb(D.ayP,new B.an(x.y.U(0.9),w,w,A.jn,w,w,A.P),w,A.ew,w,A.aS,w,v,w,w,A.m8,w,w)}}
 var z=a.updateTypes(["Vj(ar<c,ae<k,k>>)"])
 C.b1P.prototype={
 $2(d,e){return d>e?d:e},
@@ -375,7 +369,7 @@ else u="00h00"
 w=B.a([new C.Nw(t,"Total de pausas",v),new C.Nw(x,"Motivo mais comum",v),new C.Nw(u,"Tempo m\xe9dio geral",v)],y.L)
 u=A.aO.U(0.3)
 x=B.aC(10)
-return B.al(v,B.h1(A.aaB,w,A.p3,A.aq,10,10),A.B,v,v,new B.an(u,v,v,x,v,v,A.P),v,v,v,v,A.qt,v,v,1/0)},
+return B.al(v,B.h1(A.aaB,w,A.p4,A.aq,10,10),A.B,v,v,new B.an(u,v,v,x,v,v,A.P),v,v,v,v,A.qu,v,v,1/0)},
 $S:75}
 C.b1B.prototype={
 $2(d,e){var x,w,v,u,t,s,r,q,p,o,n,m=this,l=null,k="Per\xedodo anterior",j=m.a
@@ -392,8 +386,8 @@ s=B.a3(B.a([B.a3(B.a([B.mx(""+j.gRd(),A.bu,!0,1,A.O),B.M6(A.i.a4(x,0)+"%",A.bu.U
 x=B.a([],t)
 u=e.b>260
 if(u){q=m.e.ax
-x.push(B.P(k,l,l,l,l,q==null?l:q.ja(A.R,10),l,l))}else{if(j.gRd()>j.gSM())q=E.qS
-else q=j.gRd()<j.gSM()?E.qR:D.qV
+x.push(B.P(k,l,l,l,l,q==null?l:q.ja(A.R,10),l,l))}else{if(j.gRd()>j.gSM())q=E.qT
+else q=j.gRd()<j.gSM()?E.qS:D.qW
 x.push(B.bW(q,A.R,l,10))}q=j.gSM()
 p=m.e.ax
 o=p==null
@@ -410,8 +404,8 @@ r=j.gSN()
 q=o?l:p.l1(A.R,10,A.b2)
 q=B.a([w,B.P(""+r,l,l,l,l,q,l,l)],t)
 if(u)q.push(B.P(k,l,l,l,l,o?l:p.ja(A.R,10),l,l))
-else{if(j.gSy()>j.gSN())j=E.qS
-else j=j.gSy()<j.gSN()?E.qR:D.qV
+else{if(j.gSy()>j.gSN())j=E.qT
+else j=j.gSy()<j.gSN()?E.qS:D.qW
 q.push(B.bW(j,A.R,l,10))}return B.V(B.a([v,new B.c5(1,A.ah,s,l),new C.aiD(m.b,m.c,m.d,12,D.aew,D.aex,l),B.a3(B.a([new B.c5(1,A.ah,x,l),new B.c5(1,A.ah,B.a3(q,A.v,A.fm,A.t,5),l)],t),A.v,A.as,A.t,0)],t),A.N,l,A.aL,A.t,8)},
 $S:72};(function inheritance(){var x=a.inheritMany,w=a.inherit
 x(B.H,[C.AO,C.SK,C.Zk,C.YS,C.yy,C.aiY,C.Vj,C.aHh,C.aiZ,C.Nw,C.aiD,C.OS,C.aIO])
@@ -432,7 +426,7 @@ D.ahl=new B.h6(A.X,null,null,D.bZJ,null)
 D.c_V=new B.dr("Nenhum outro motivo no momento...",A.dd,A.bk,!0,null,null,null,null,null,null)
 D.ahy=new B.h6(A.X,null,null,D.c_V,null)
 D.aq2=new B.aA(0,0,6,0)
-D.qV=new B.aZ(58646,"MaterialIcons",null,!1)
+D.qW=new B.aZ(58646,"MaterialIcons",null,!1)
 D.ayP=new B.di(A.jR,14,A.R,null,null)
 D.brt=x([],y.o)
 D.byo=new B.ar("",0,y.O)
@@ -440,6 +434,6 @@ D.bZH=new B.a7c(2,null)
 D.c_s=new B.dr("Convers\xf5es",A.cV,A.bk,!1,null,A.O,1,null,null,null)
 D.c_v=new B.dr("N\xe3o Convers\xf5es",A.cV,A.bk,!1,null,A.O,1,A.fT,null,null)
 D.c23=new B.Y(!0,null,null,null,null,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-D.a9B=new B.it("\n",null,null,A.bF,null,null,null,null,null,null,D.c23)
+D.a9C=new B.it("\n",null,null,A.bF,null,null,null,null,null,null,D.c23)
 D.c2v=new B.Y(!0,A.W,null,null,null,null,null,A.ad,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)})()};
-(a=>{a["CgP79M0qejCVYghxZdBNE3srtWw="]=a.current})($__dart_deferred_initializers__);
+(a=>{a["TQwhk4cWZWcxgC/sUoH22BZffWk="]=a.current})($__dart_deferred_initializers__);
